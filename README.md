@@ -1,41 +1,73 @@
-Installation
-Warning Make sure to follow the requirements first.
+<a name="installation"></a>
+
+## Installation
+
+> **Warning**
+> Make sure to follow the requirements first.
 
 Here is how you can run the project locally:
 
-Clone this project
+1. Clone this repo
 
-git clone https://github.com/rafaelcacote/laravel.git
-Go into the project root directory
+   ```sh
+   git clone https://github.com/rafaelcacote/laravel.git
+   ```
 
-cd laravel
-Copy .env.example file to .env file
+1. Go into the project root directory
 
-cp .env.example .env
-Create database (you can put any database name)
+   ```sh
+   cd velflix
+   ```
 
-Go to .env file
+1. Copy .env.example file to .env file
+   ```sh
+   cp .env.example .env
+   ```
+1. Create database `db_system` (you can change database name)
 
-set database credentials
-Make sure to follow your database username and password
+1. Go to `.env` file
 
-Install PHP dependencies
+   - set database credentials (`DB_DATABASE=`, `DB_USERNAME=`, `DB_PASSWORD=`)
+     > Make sure to follow your database username and password
 
-composer install
-Generate key
+1. Install PHP dependencies
 
-php artisan key:generate
+   ```sh
+   composer install
+   ```
 
-php artisan migrate
+1. Generate key
 
-php artisan db:seed
+   ```sh
+   php artisan key:generate
+   ```
 
-this command will create 2 users (admin and normal user):
+   ```
 
-cpf: 00000000000 , password:123
+   ```
 
-Run server
+1. Run migration
+   ```
+   php artisan migrate
+   ```
+1. Run seeder
 
-for valet users visit velflix.test in your favorite browser
+   ```
+   php artisan db:seed
+   ```
 
-php artisan serve
+   this command will create 1 users (admin user):
+
+   > user: 00000000000 , password: 1234678
+
+1. Run server
+
+   > for valet users visit `localhost:8000` in your favorite browser
+
+   ```sh
+   php artisan serve
+   ```
+
+1. Visit `localhost:8000` in your favorite browser.
+
+   > Make sure to follow your Laravel local Development Environment.

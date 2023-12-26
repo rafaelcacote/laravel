@@ -16,7 +16,7 @@ Here is how you can run the project locally:
 1. Go into the project root directory
 
    ```sh
-   cd velflix
+   cd laravel
    ```
 
 1. Copy .env.example file to .env file
